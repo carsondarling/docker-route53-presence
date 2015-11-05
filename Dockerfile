@@ -1,5 +1,5 @@
-FROM stackbrew/ubuntu:13.10
-MAINTAINER Roman Atachiants "roman@misakai.com"
+FROM stackbrew/ubuntu:14.04
+MAINTAINER Carson Darling "carsondarling@gmail.com"
 
 RUN apt-get update -qq
 RUN apt-get install -y python-boto python-requests
