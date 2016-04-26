@@ -13,7 +13,7 @@ from boto.route53.record import ResourceRecordSets
 import requests
 
 def get_zone_id(hostname):
-  domainname = '.'.join(hostname.split('.')[-2:])
+  domainname = '.'.join(hostname.split('.')[1:])
   zone = conn.get_hosted_zone_by_name(domainname)
   if not zone:
     print "Sorry, you don't have access to that domain!"
